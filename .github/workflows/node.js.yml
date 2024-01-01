@@ -26,4 +26,4 @@ jobs:
         touch .env
         echo "${{ secrets.PROD_ENV_FILE }}" > .env
     - run: pm2 kill
-    - run: pm2 restart BackendAPI
+    - run: pm2 start BackendAPI
