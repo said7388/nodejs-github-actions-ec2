@@ -25,4 +25,5 @@ jobs:
     - run: |
         touch .env
         echo "${{ secrets.PROD_ENV_FILE }}" > .env
-    - run: pm2 restart BackendAPI
+    - run: chmod +x ./pm2_runner.sh
+    - run: bash ./pm2_runner.sh
