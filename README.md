@@ -42,7 +42,7 @@ location /api {
 sudo systemctl restart nginx
 ```
 
--   STEP10 - Run backend api in the background as a service using pm2
+-   STEP10 - Run backend API in the background as a service using pm2
 
 ```bash
 pm2 start server.js --name=BackendAPI
